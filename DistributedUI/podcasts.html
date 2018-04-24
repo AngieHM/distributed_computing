@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery Multislider Demos</title>
+<link rel="stylesheet" 
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+  crossorigin="anonymous">
+  <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/podcasts.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg bg-info rounded">
+    <a class="navbar-brand text-light" href="#">Podflix</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: unset !important;">
+      <ul class="nav nav-pills mr-auto justify-content-end">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Angela</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bell"></i>
+          </a>
+            <ul class="dropdown-menu">
+              <li class="head text-light bg-dark">
+                <div class="row">
+                  <div class="col-lg-12 col-sm-12 col-12">
+                    <span>Notifications (3)</span>
+                    <a href="" class="float-right text-light">Mark all as read</a>
+                  </div>
+              </li>
+              <li class="notification-box">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-3 col-3 text-center">
+                    <img src="images/prof.jpg" class="w-50 rounded-circle">
+                  </div>    
+                  <div class="col-lg-8 col-sm-8 col-8">
+                    <strong class="text-info">David John</strong>
+                    <div>
+                      Lorem ipsum dolor sit amet, consectetur
+                    </div>
+                    <small class="text-warning">27.11.2015, 15:00</small>
+                  </div>    
+                </div>
+              </li>
+              <li class="notification-box bg-gray">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-3 col-3 text-center">
+                    <img src="images/prof.jpg" class="w-50 rounded-circle">
+                  </div>    
+                  <div class="col-lg-8 col-sm-8 col-8">
+                    <strong class="text-info">David John</strong>
+                    <div>
+                      Lorem ipsum dolor sit amet, consectetur
+                    </div>
+                    <small class="text-warning">27.11.2015, 15:00</small>
+                  </div>    
+                </div>
+              </li>
+              <li class="notification-box">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-3 col-3 text-center">
+                    <img src="images/prof.jpg" class="w-50 rounded-circle">
+                  </div>    
+                  <div class="col-lg-8 col-sm-8 col-8">
+                    <strong class="text-info">David John</strong>
+                    <div>
+                      Lorem ipsum dolor sit amet, consectetur
+                    </div>
+                    <small class="text-warning">27.11.2015, 15:00</small>
+                  </div>    
+                </div>
+              </li>
+              <li class="footer bg-dark text-center">
+                <a href="" class="text-light">View All</a>
+              </li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid banner">
+  </div>
+  <div class="container podcasts">
+    <h3>Available podcasts</h3>
+    <hr>
+  <div id="mixedSlider">
+        <div class="MS-content">
+            <div class="item">
+                <div class="imgTitle" class="rounded-circle" style="border-radius: 50%;">
+                    <h2 class="blogTitle">Season 1</h2>
+                    <img src="images/season-1.jpg" alt="" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="imgTitle">
+                    <h2 class="blogTitle">Season 2</h2>
+                    <img src="images/season-2.jpg" alt="" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="imgTitle">
+                    <h2 class="blogTitle">Season 3</h2>
+                    <img src="images/season-3.jpg" alt="" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="imgTitle">
+                    <h2 class="blogTitle">Season 4</h2>
+                    <img src="images/season-4.jpg" alt="" />
+                </div>
+            </div>
+             <div class="item">
+                <div class="imgTitle">
+                    <h2 class="blogTitle">Season 5</h2>
+                    <img src="images/season-5.jpg" alt="" />
+                </div>
+            </div>
+             <div class="item">
+                <div class="imgTitle">
+                    <h2 class="blogTitle">Season 6</h2>
+                    <img src="images/season-6.jpg" alt="" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="imgTitle">
+                    <h2 class="blogTitle">Season 7</h2>
+                    <img src="images/season-7.jpg" alt="" />
+                </div>
+            </div>
+
+
+        </div>
+        <div class="MS-controls">
+            <button class="MS-left"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+            <button class="MS-right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        </div>
+    </div>
+  </div>
+  <div class="container podcasts">
+   <h3>Available episodes</h3>
+    <hr>
+    <h3>Season 1</h3>
+    <div class="row episodes">
+      <div class="col-md-3">
+        <div class="row">
+        <div class="col-md-3"><span class="oi oi-play-circle icon-playP"></span></div>
+          <div class="col-md-9">episode 1</div>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="row">
+        <div class="col-md-3"><span class="oi oi-play-circle icon-playP"></span></div>
+          <div class="col-md-9">episode 2</div>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="row">
+          <div class="col-md-3"><span class="oi oi-play-circle icon-playP"></span></div>
+          <div class="col-md-9">episode 3</div>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="row">
+        <div class="col-md-3"><span class="oi oi-play-circle icon-playP"></span></div>
+          <div class="col-md-9">episode 4</div>
+        </div>
+      </div>
+    </div>
+     <h3>Season 2</h3>
+    <div class="row episodes">
+      <div class="col-md-3">
+        <div class="row">
+        <div class="col-md-3"><span class="oi oi-play-circle icon-playP"></span></div>
+          <div class="col-md-9">episode 1</div>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="row">
+         <div class="col-md-3"><span class="oi oi-play-circle icon-playP"></span></div>
+          <div class="col-md-9">episode 2</div>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="row">
+        <div class="col-md-3"><span class="oi oi-play-circle icon-playP"></span></div>
+          <div class="col-md-9">episode 3</div>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="row">
+         <div class="col-md-3"><span class="oi oi-play-circle icon-playP"></span></div>
+          <div class="col-md-9">episode 4</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+  crossorigin="anonymous">
+  </script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+  crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+  crossorigin="anonymous">
+  </script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 
+<script src="js/multislider.js"></script> 
+<script>
+$('#basicSlider').multislider({
+			continuous: true,
+			duration: 2000
+		});
+		$('#mixedSlider').multislider({
+			duration: 750,
+			interval: 3000
+		});
+</script>
+<a href="https://icons8.com">Icon pack by Icons8</a>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

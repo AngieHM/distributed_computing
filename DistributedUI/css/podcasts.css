@@ -1,0 +1,38 @@
+.banner{
+	
+	background-image: url(../images/game-of-thrones.jpg);
+	background-size: cover;
+	min-height: 430px;
+}
+
+.icon-playP{
+
+	font-size: 40px;
+}
+
+.container{
+
+	margin-top: 20px!important;
+	margin-bottom: 20px!important;
+}
+.episodes{
+
+	margin-top: 30px;
+	background-color: #707070;
+	padding: 50px;
+}
+.profile{
+	margin-top: 30px;
+	padding: 20px;
+}
+h3{
+
+	padding-top: 5px;
+}
+
+.nav-tabs .nav-link {
+	color: white!important;
+}
+.nav-tabs .active {
+	color: #333!important;
+}

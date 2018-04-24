@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery Multislider Demos</title>
+<link rel="stylesheet" 
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+  crossorigin="anonymous">
+  <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/podcasts.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg bg-info rounded">
+    <a class="navbar-brand text-light" href="#">Podflix</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: unset !important;">
+      <ul class="nav nav-pills mr-auto justify-content-end">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Angela</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bell"></i>
+          </a>
+            <ul class="dropdown-menu">
+              <li class="head text-light bg-dark">
+                <div class="row">
+                  <div class="col-lg-12 col-sm-12 col-12">
+                    <span>Notifications (3)</span>
+                    <a href="" class="float-right text-light">Mark all as read</a>
+                  </div>
+              </li>
+              <li class="notification-box">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-3 col-3 text-center">
+                    <img src="images/prof.jpg" class="w-50 rounded-circle">
+                  </div>    
+                  <div class="col-lg-8 col-sm-8 col-8">
+                    <strong class="text-info">David John</strong>
+                    <div>
+                      Lorem ipsum dolor sit amet, consectetur
+                    </div>
+                    <small class="text-warning">27.11.2015, 15:00</small>
+                  </div>    
+                </div>
+              </li>
+              <li class="notification-box bg-gray">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-3 col-3 text-center">
+                    <img src="images/prof.jpg" class="w-50 rounded-circle">
+                  </div>    
+                  <div class="col-lg-8 col-sm-8 col-8">
+                    <strong class="text-info">David John</strong>
+                    <div>
+                      Lorem ipsum dolor sit amet, consectetur
+                    </div>
+                    <small class="text-warning">27.11.2015, 15:00</small>
+                  </div>    
+                </div>
+              </li>
+              <li class="notification-box">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-3 col-3 text-center">
+                    <img src="images/prof.jpg" class="w-50 rounded-circle">
+                  </div>    
+                  <div class="col-lg-8 col-sm-8 col-8">
+                    <strong class="text-info">David John</strong>
+                    <div>
+                      Lorem ipsum dolor sit amet, consectetur
+                    </div>
+                    <small class="text-warning">27.11.2015, 15:00</small>
+                  </div>    
+                </div>
+              </li>
+              <li class="footer bg-dark text-center">
+                <a href="" class="text-light">View All</a>
+              </li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row profile">
+      <div class="col-md-8"><h1>Angela</h1></div>
+      <div class="col-md-2"><h5>Following 5</h5></div>
+      <div class="col-md-2"><h5>Followers 4</h5></div>
+    </div>
+  </div>
+  <div class="container podcasts">
+<div class="bd-example bd-example-tabs">
+  <nav class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="home" aria-expanded="true">Boards</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="profile" aria-expanded="false">People</a>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" aria-expanded="true">
+            <div class="card-columns">
+        <div class="card">
+        <img class="card-img-top img-fluid" src="images/rsz_house-of-cards.jpg" alt="Card Columns 1">
+        <div class="card-overlay">
+          <div class="text"><span class="oi oi-play-circle icon-play"></span></div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <h5 class="card-title">House of cards</h5>
+            </div>
+            <div class="col-md-6">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKXSURBVGhD7Zm7itVQGEaPyKiooL0ivoDdqL0I6hsoKIJYCDoKFhaKFr6JVyy8gpfGW6OF4gOITDGNIFPZKDOIuj6ZH342O5eT7J0cZC9YxclJdvYKSU4yMykUCoX/ivW4gHP/PuVjF17HB3gDj6P2nQQNdBv/4H3cgDk4hj9Q+/G+wx3Ym3PoB84RswdX0e/H+wV3Yi80aU3eD5w65jna2Mt4DW+6ZXLmY/ahH/cQGpfQf5csRhehH7hvjM79z2jjvcSQMOYT9j6AKWPCiN84jzHCmJPYmxQxYYS8iHXcQltXd9EkaNIP0U9EcW1iukSIq2jrP9KCVHSJ6RpxBHU3s230o5kUTVpHx0+sKqZLxAF8j36bn7gbk9M25i76dZoidEH/Qr/NCh7FbGzFD+h3GsZsw4+o75oiTmEY8Qz1BJCFw/gCqx4vdA2FMXoQrOM06lZsY+h03I9Z2IT2INlkGFPHGQwjdG1lYTO+Qj9Z+R0X1/y6tsxsE3MWB414g36SitqLHk06vAHUxZzHwSLEZfST05FXXIy2MSdw0Aihl6x76Ceni30jxmgTsx3tbjZIhJEiRp99jO5m+p0ZLMLIETMaJQb9+iUmB11ivqFffyZiYkdZ1sUsYbj+YxwtpirCrIqJhchRYmIR+tx0mq1DPZvZ9+ErwKAxVRFa3nTN6LHclusVYAuGYw0SUxdhVMXo2ey1W/YUhbbV5P36WWPaRBixmPAR/yAag8VME2HEYkz96yAkFvMEk8V0iTBiMTq96n5nssT0iTB8zFuseo8xNLYm7/fZK0Yb6h3CDzhthKGYK9gUYSSNCf/R0+b9OyWxmAs4NTqKd3CMCMPH6K83mlMntKGOwhgRhvatOXSOKBQKhVljMvkL8me3dDLtp0IAAAAASUVORK5CYII=">
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="card">
+        <img class="card-img-top img-fluid" src="images/rsz_prison-break.jpg" alt="Card Columns 1">
+                <div class="card-overlay">
+          <div class="text"><span class="oi oi-play-circle icon-play"></span></div>
+        </div>
+        <div class="card-body">
+         <div class="row">
+            <div class="col-md-6">
+              <h5 class="card-title">Prison break</h5>
+            </div>
+            <div class="col-md-6">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKXSURBVGhD7Zm7itVQGEaPyKiooL0ivoDdqL0I6hsoKIJYCDoKFhaKFr6JVyy8gpfGW6OF4gOITDGNIFPZKDOIuj6ZH342O5eT7J0cZC9YxclJdvYKSU4yMykUCoX/ivW4gHP/PuVjF17HB3gDj6P2nQQNdBv/4H3cgDk4hj9Q+/G+wx3Ym3PoB84RswdX0e/H+wV3Yi80aU3eD5w65jna2Mt4DW+6ZXLmY/ahH/cQGpfQf5csRhehH7hvjM79z2jjvcSQMOYT9j6AKWPCiN84jzHCmJPYmxQxYYS8iHXcQltXd9EkaNIP0U9EcW1iukSIq2jrP9KCVHSJ6RpxBHU3s230o5kUTVpHx0+sKqZLxAF8j36bn7gbk9M25i76dZoidEH/Qr/NCh7FbGzFD+h3GsZsw4+o75oiTmEY8Qz1BJCFw/gCqx4vdA2FMXoQrOM06lZsY+h03I9Z2IT2INlkGFPHGQwjdG1lYTO+Qj9Z+R0X1/y6tsxsE3MWB414g36SitqLHk06vAHUxZzHwSLEZfST05FXXIy2MSdw0Aihl6x76Ceni30jxmgTsx3tbjZIhJEiRp99jO5m+p0ZLMLIETMaJQb9+iUmB11ivqFffyZiYkdZ1sUsYbj+YxwtpirCrIqJhchRYmIR+tx0mq1DPZvZ9+ErwKAxVRFa3nTN6LHclusVYAuGYw0SUxdhVMXo2ey1W/YUhbbV5P36WWPaRBixmPAR/yAag8VME2HEYkz96yAkFvMEk8V0iTBiMTq96n5nssT0iTB8zFuseo8xNLYm7/fZK0Yb6h3CDzhthKGYK9gUYSSNCf/R0+b9OyWxmAs4NTqKd3CMCMPH6K83mlMntKGOwhgRhvatOXSOKBQKhVljMvkL8me3dDLtp0IAAAAASUVORK5CYII=">
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="card">
+        <img class="card-img-top img-fluid" src="images/rsz_game-of-thrones.jpg" alt="Card Columns 1">
+                <div class="card-overlay">
+          <div class="text"><span class="oi oi-play-circle icon-play"></span></div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <h5 class="card-title">Game of thrones</h5>
+            </div>
+            <div class="col-md-6">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKXSURBVGhD7Zm7itVQGEaPyKiooL0ivoDdqL0I6hsoKIJYCDoKFhaKFr6JVyy8gpfGW6OF4gOITDGNIFPZKDOIuj6ZH342O5eT7J0cZC9YxclJdvYKSU4yMykUCoX/ivW4gHP/PuVjF17HB3gDj6P2nQQNdBv/4H3cgDk4hj9Q+/G+wx3Ym3PoB84RswdX0e/H+wV3Yi80aU3eD5w65jna2Mt4DW+6ZXLmY/ahH/cQGpfQf5csRhehH7hvjM79z2jjvcSQMOYT9j6AKWPCiN84jzHCmJPYmxQxYYS8iHXcQltXd9EkaNIP0U9EcW1iukSIq2jrP9KCVHSJ6RpxBHU3s230o5kUTVpHx0+sKqZLxAF8j36bn7gbk9M25i76dZoidEH/Qr/NCh7FbGzFD+h3GsZsw4+o75oiTmEY8Qz1BJCFw/gCqx4vdA2FMXoQrOM06lZsY+h03I9Z2IT2INlkGFPHGQwjdG1lYTO+Qj9Z+R0X1/y6tsxsE3MWB414g36SitqLHk06vAHUxZzHwSLEZfST05FXXIy2MSdw0Aihl6x76Ceni30jxmgTsx3tbjZIhJEiRp99jO5m+p0ZLMLIETMaJQb9+iUmB11ivqFffyZiYkdZ1sUsYbj+YxwtpirCrIqJhchRYmIR+tx0mq1DPZvZ9+ErwKAxVRFa3nTN6LHclusVYAuGYw0SUxdhVMXo2ey1W/YUhbbV5P36WWPaRBixmPAR/yAag8VME2HEYkz96yAkFvMEk8V0iTBiMTq96n5nssT0iTB8zFuseo8xNLYm7/fZK0Yb6h3CDzhthKGYK9gUYSSNCf/R0+b9OyWxmAs4NTqKd3CMCMPH6K83mlMntKGOwhgRhvatOXSOKBQKhVljMvkL8me3dDLtp0IAAAAASUVORK5CYII=">
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="card">
+        <img class="card-img-top img-fluid" src="images/rsz_scandal.jpg" alt="Card Columns 1">
+                <div class="card-overlay">
+          <div class="text"><span class="oi oi-play-circle icon-play"></span></div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <h5 class="card-title">Scandal</h5>
+            </div>
+            <div class="col-md-6">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKXSURBVGhD7Zm7itVQGEaPyKiooL0ivoDdqL0I6hsoKIJYCDoKFhaKFr6JVyy8gpfGW6OF4gOITDGNIFPZKDOIuj6ZH342O5eT7J0cZC9YxclJdvYKSU4yMykUCoX/ivW4gHP/PuVjF17HB3gDj6P2nQQNdBv/4H3cgDk4hj9Q+/G+wx3Ym3PoB84RswdX0e/H+wV3Yi80aU3eD5w65jna2Mt4DW+6ZXLmY/ahH/cQGpfQf5csRhehH7hvjM79z2jjvcSQMOYT9j6AKWPCiN84jzHCmJPYmxQxYYS8iHXcQltXd9EkaNIP0U9EcW1iukSIq2jrP9KCVHSJ6RpxBHU3s230o5kUTVpHx0+sKqZLxAF8j36bn7gbk9M25i76dZoidEH/Qr/NCh7FbGzFD+h3GsZsw4+o75oiTmEY8Qz1BJCFw/gCqx4vdA2FMXoQrOM06lZsY+h03I9Z2IT2INlkGFPHGQwjdG1lYTO+Qj9Z+R0X1/y6tsxsE3MWB414g36SitqLHk06vAHUxZzHwSLEZfST05FXXIy2MSdw0Aihl6x76Ceni30jxmgTsx3tbjZIhJEiRp99jO5m+p0ZLMLIETMaJQb9+iUmB11ivqFffyZiYkdZ1sUsYbj+YxwtpirCrIqJhchRYmIR+tx0mq1DPZvZ9+ErwKAxVRFa3nTN6LHclusVYAuGYw0SUxdhVMXo2ey1W/YUhbbV5P36WWPaRBixmPAR/yAag8VME2HEYkz96yAkFvMEk8V0iTBiMTq96n5nssT0iTB8zFuseo8xNLYm7/fZK0Yb6h3CDzhthKGYK9gUYSSNCf/R0+b9OyWxmAs4NTqKd3CMCMPH6K83mlMntKGOwhgRhvatOXSOKBQKhVljMvkL8me3dDLtp0IAAAAASUVORK5CYII=">
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="card">
+        <img class="card-img-top img-fluid" src="images/rsz_sherlock.jpg" alt="Card Columns 1">
+          <div class="card-overlay">
+            <div class="text"><span class="oi oi-play-circle icon-play"></span></div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <h5 class="card-title">Sherlock</h5>
+            </div>
+            <div class="col-md-6">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKXSURBVGhD7Zm7itVQGEaPyKiooL0ivoDdqL0I6hsoKIJYCDoKFhaKFr6JVyy8gpfGW6OF4gOITDGNIFPZKDOIuj6ZH342O5eT7J0cZC9YxclJdvYKSU4yMykUCoX/ivW4gHP/PuVjF17HB3gDj6P2nQQNdBv/4H3cgDk4hj9Q+/G+wx3Ym3PoB84RswdX0e/H+wV3Yi80aU3eD5w65jna2Mt4DW+6ZXLmY/ahH/cQGpfQf5csRhehH7hvjM79z2jjvcSQMOYT9j6AKWPCiN84jzHCmJPYmxQxYYS8iHXcQltXd9EkaNIP0U9EcW1iukSIq2jrP9KCVHSJ6RpxBHU3s230o5kUTVpHx0+sKqZLxAF8j36bn7gbk9M25i76dZoidEH/Qr/NCh7FbGzFD+h3GsZsw4+o75oiTmEY8Qz1BJCFw/gCqx4vdA2FMXoQrOM06lZsY+h03I9Z2IT2INlkGFPHGQwjdG1lYTO+Qj9Z+R0X1/y6tsxsE3MWB414g36SitqLHk06vAHUxZzHwSLEZfST05FXXIy2MSdw0Aihl6x76Ceni30jxmgTsx3tbjZIhJEiRp99jO5m+p0ZLMLIETMaJQb9+iUmB11ivqFffyZiYkdZ1sUsYbj+YxwtpirCrIqJhchRYmIR+tx0mq1DPZvZ9+ErwKAxVRFa3nTN6LHclusVYAuGYw0SUxdhVMXo2ey1W/YUhbbV5P36WWPaRBixmPAR/yAag8VME2HEYkz96yAkFvMEk8V0iTBiMTq96n5nssT0iTB8zFuseo8xNLYm7/fZK0Yb6h3CDzhthKGYK9gUYSSNCf/R0+b9OyWxmAs4NTqKd3CMCMPH6K83mlMntKGOwhgRhvatOXSOKBQKhVljMvkL8me3dDLtp0IAAAAASUVORK5CYII=">
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="card">
+        <img class="card-img-top img-fluid" src="images/orange-is-the-new-black.jpg" alt="Card Columns 1">
+        <div class="card-overlay">
+            <div class="text"><span class="oi oi-play-circle icon-play"></span></div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8">
+              <h5 class="card-title">Orange is the new black</h5>
+            </div>
+            <div class="col-md-4">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKXSURBVGhD7Zm7itVQGEaPyKiooL0ivoDdqL0I6hsoKIJYCDoKFhaKFr6JVyy8gpfGW6OF4gOITDGNIFPZKDOIuj6ZH342O5eT7J0cZC9YxclJdvYKSU4yMykUCoX/ivW4gHP/PuVjF17HB3gDj6P2nQQNdBv/4H3cgDk4hj9Q+/G+wx3Ym3PoB84RswdX0e/H+wV3Yi80aU3eD5w65jna2Mt4DW+6ZXLmY/ahH/cQGpfQf5csRhehH7hvjM79z2jjvcSQMOYT9j6AKWPCiN84jzHCmJPYmxQxYYS8iHXcQltXd9EkaNIP0U9EcW1iukSIq2jrP9KCVHSJ6RpxBHU3s230o5kUTVpHx0+sKqZLxAF8j36bn7gbk9M25i76dZoidEH/Qr/NCh7FbGzFD+h3GsZsw4+o75oiTmEY8Qz1BJCFw/gCqx4vdA2FMXoQrOM06lZsY+h03I9Z2IT2INlkGFPHGQwjdG1lYTO+Qj9Z+R0X1/y6tsxsE3MWB414g36SitqLHk06vAHUxZzHwSLEZfST05FXXIy2MSdw0Aihl6x76Ceni30jxmgTsx3tbjZIhJEiRp99jO5m+p0ZLMLIETMaJQb9+iUmB11ivqFffyZiYkdZ1sUsYbj+YxwtpirCrIqJhchRYmIR+tx0mq1DPZvZ9+ErwKAxVRFa3nTN6LHclusVYAuGYw0SUxdhVMXo2ey1W/YUhbbV5P36WWPaRBixmPAR/yAag8VME2HEYkz96yAkFvMEk8V0iTBiMTq96n5nssT0iTB8zFuseo8xNLYm7/fZK0Yb6h3CDzhthKGYK9gUYSSNCf/R0+b9OyWxmAs4NTqKd3CMCMPH6K83mlMntKGOwhgRhvatOXSOKBQKhVljMvkL8me3dDLtp0IAAAAASUVORK5CYII=">
+            </div>
+          </div>
+        </div>
+        </div>
+  </div>
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" aria-expanded="false">
+     
+    </div>
+  </div>
+</div>
+  </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+  crossorigin="anonymous">
+  </script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+  crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+  crossorigin="anonymous">
+  </script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 
+<script src="js/multislider.js"></script> 
+<script>
+$('#basicSlider').multislider({
+			continuous: true,
+			duration: 2000
+		});
+		$('#mixedSlider').multislider({
+			duration: 750,
+			interval: 3000
+		});
+</script>
+<a href="https://icons8.com">Icon pack by Icons8</a>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
